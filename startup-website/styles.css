@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 16px;
     font-family: 'Work Sans', sans-serif;
@@ -6,6 +10,9 @@ html {
 .page {
     width: 1400px;
     margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -13,7 +20,6 @@ html {
     height: 62px;
     margin: auto;
     display: flex;
-    margin-top: 39px;
 }
 
 .navigation {
@@ -88,4 +94,20 @@ html {
 
 .top-section {
     background-color: #F3C6BD;
+    padding-top: 39px;
+}
+
+.footer {
+    height: 50px;
+    width: 1140px;
+    display: flex;
+    /* margin: auto auto auto; */
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid black;
+}
+
+.footer-links {
+    margin-top: auto;
 }
