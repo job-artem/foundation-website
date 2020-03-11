@@ -1,3 +1,9 @@
+@media screen and (max-width: 399px) {
+    .features {
+        display: none;
+    }
+}
+
 .features {
     margin-top: 106px;
     position: relative;
