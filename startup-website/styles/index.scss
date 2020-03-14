@@ -1,0 +1,31 @@
+@import './about.scss';
+@import './customers.scss';
+@import './features-mobile';
+@import './features';
+@import './footer';
+@import './header';
+@import './headline';
+@import './breakpoints.scss';
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    color: #2B292D;
+}
+
+.page {
+    width: 100%;
+    overflow-x: hidden;
+    @include for-sm-up{
+        width: 1400px;
+        margin: auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+}
