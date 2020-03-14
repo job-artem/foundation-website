@@ -11,7 +11,7 @@
             display: block;
             font-size: 18px;
             line-height: 26px;
-            color: rgba(43, 41, 45, 0.6);
+            color: $text-secondary-color;
             width: 360px;
             height: 85px;
             margin-top: 30px;
@@ -49,7 +49,7 @@
     
     &__navigation-link {
         text-decoration: none;
-        color: rgba(43, 41, 45, 0.6);
+        color: $text-secondary-color;
         line-height: 30px;
     }
     
@@ -104,7 +104,7 @@
     
     &-navigation__item {
         text-decoration: none;
-        color: rgba(43, 41, 45, 0.6);
+        color: $text-secondary-color;
         margin-right: 20px;
         font-size: 14px;
         line-height: 22px;
@@ -148,7 +148,7 @@
         line-height: 25px;
         /* or 125% */
         text-align: center;
-        color: #2B292D;
+        color: $text-color-black;
         margin-top: 20px;
     }
     
@@ -157,7 +157,7 @@
         line-height: 25px;
         /* or 125% */
         text-align: center;
-        color: rgba(43, 41, 45, 0.6);
+        color: $text-secondary-color;
     }
     
     &__image {

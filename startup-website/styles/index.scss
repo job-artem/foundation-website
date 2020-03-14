@@ -1,3 +1,5 @@
+@import './breakpoints.scss';
+@import './variables';
 @import './about.scss';
 @import './customers.scss';
 @import './features-mobile';
@@ -5,7 +7,8 @@
 @import './footer';
 @import './header';
 @import './headline';
-@import './breakpoints.scss';
+@import './inbox.scss';
+
 
 
 * {
@@ -15,7 +18,7 @@
 html {
     font-size: 16px;
     font-family: 'Work Sans', sans-serif;
-    color: #2B292D;
+    color: $text-color-black;
 }
 
 .page {

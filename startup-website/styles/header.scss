@@ -4,7 +4,7 @@
         height: 62px;
         margin: auto;
         display: flex;
-        background-color: #F3C6BD;
+        background-color: $background-color-secondary;
     }
     height: 64px;
     width: 100%;
@@ -18,7 +18,7 @@
         }
         width: 58px;
         border: none;
-        border-left: 1px solid #00000026;
+        border-left: 1px solid $menu-button-border-left-color;
         background: transparent;
         margin-left: auto;
         height: 100%;
@@ -47,7 +47,7 @@
     }
     
     &__item {
-        color: #2B292D;
+        color: $text-color-black;
         text-decoration: none;
         line-height: 25px;
         font-size: 18px;
@@ -93,7 +93,7 @@
             display: inline-block;
             font-size: 18px;
             line-height: 25px;
-            color: #2B292D;
+            color: $text-color-black;
             opacity: 0.6;
         }
     }
@@ -106,7 +106,7 @@
 }
 
 .top-section {
-    background-color: #F3C6BD;
+    background-color: $background-color-secondary;
     @include for-sm-up{
         padding-top: 39px;
     }

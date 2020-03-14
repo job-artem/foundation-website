@@ -13,7 +13,7 @@
     @include for-sm-up {
         width: 1400px;
         height: 255px;
-        background: #F4F5F7;
+        background: $background-color;
         padding-left: 130px;
         padding-right: 130px;
         display: flex;
