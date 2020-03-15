@@ -13,7 +13,7 @@
     &__small-image{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
         margin: 0;
         padding: 0;
         @include for-sm-up{
@@ -25,10 +25,25 @@
         display: none;
         @include for-sm-up{
             display: block;
+            justify-content: center;
             margin: 0;
             margin-right: 164px;
         }
+        &-caption{
+            display: none;
+            @include for-sm-up{
+                display: block;
+                font-size: 14px;
+                line-height: 22px;
+                text-align: center;
+                color: $text-secondary-color;
+            }
+        }    
+
+        
     }
+
+    
 
     &__image{
         max-width: 100%;
