@@ -1,46 +1,24 @@
 @import './breakpoints.scss';
 .about {
     padding: 46px 15px;
-
-    &__article {
-        width: 100%;
-        
-        div {
-            margin: 0px 0px 20px 0px;
+    @include for-sm-up {
+        display: flex;
+        padding: 77px 131px 76px 130px;
+    }
+    article {
+        margin-bottom: 20px;
+        @include for-sm-up {
+            margin: 0;
+            margin-right: 29px;
         }
     }
-    
-    @include for-sm-up {
-        width: 1400px;
-        height: 255px;
-        background: $background-color;
-        padding-left: 130px;
-        padding-right: 130px;
-        display: flex;
-        align-items: center;
-
-        .about{
-            &__article {
-                display: flex;
-                justify-content: space-between;
-                margin-top: 77px;
-                margin-bottom: 76px;
-            }
-            &__article div {
-                width: 555px;
-                height: 102px;
-                margin-right: 29px;
-            }
-        }
+    article:last-child {
+        margin: 0;
     }
 }
 
-
-
-.article{
+.article {
     &__title {
-        margin: 0;
-        margin-bottom: 5px;
         font-weight: bold;
         font-size: 22px;
         line-height: 32px;
@@ -48,6 +26,5 @@
     &__text {
         font-size: 22px;
         line-height: 32px;
-        margin: 0;
     }
 }

@@ -1,38 +1,26 @@
 .about {
   padding: 46px 15px;
 }
-.about__article {
-  width: 100%;
-}
-.about__article div {
-  margin: 0px 0px 20px 0px;
-}
 @media screen and (min-width: 400px) {
   .about {
-    width: 1400px;
-    height: 255px;
-    background: #F4F5F7;
-    padding-left: 130px;
-    padding-right: 130px;
     display: flex;
-    align-items: center;
+    padding: 77px 131px 76px 130px;
   }
-  .about .about__article {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 77px;
-    margin-bottom: 76px;
-  }
-  .about .about__article div {
-    width: 555px;
-    height: 102px;
+}
+.about article {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 400px) {
+  .about article {
+    margin: 0;
     margin-right: 29px;
   }
 }
+.about article:last-child {
+  margin: 0;
+}
 
 .article__title {
-  margin: 0;
-  margin-bottom: 5px;
   font-weight: bold;
   font-size: 22px;
   line-height: 32px;
@@ -40,7 +28,6 @@
 .article__text {
   font-size: 22px;
   line-height: 32px;
-  margin: 0;
 }
 
 .customers {
