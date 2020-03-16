@@ -1,5 +1,5 @@
 .header {
-    @include for-sm-up{
+    @include for-sm-up {
         width: 1140px;
         height: 62px;
         margin: auto;
@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     &__menu-button {
-        @include for-sm-up{
+        @include for-sm-up {
             display: none;
         }
         width: 58px;
@@ -25,27 +25,27 @@
         &-icon {
             width: 18px;
             height: 13px;
-            background-image: url('img/Shape.png');
+            background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png');
             display: inline-block;
         }
     }
 }
+
 .navigation {
     display: none;
-    @include for-sm-up{
+    @include for-sm-up {
         display: block;
         margin-left: auto;
         margin-top: 7px;
         margin-right: 75px;
     }
     &__arrow {
-        background-image: url(./img/Arrow.png);
+        background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
         display: inline-block;
         width: 8px;
         height: 5px;
         margin-left: 11px;
     }
-    
     &__item {
         color: $text-color-black;
         text-decoration: none;
@@ -58,12 +58,12 @@
         &:last-child {
             margin-right: 0;
         }
-    } 
+    }
 }
 
 .media__button {
     display: none;
-    @include for-sm-up{
+    @include for-sm-up {
         display: block;
     }
 }
@@ -74,22 +74,20 @@
         width: 48px;
         height: 48px;
         margin-right: 13px;
-        @include for-sm-up{
+        @include for-sm-up {
             width: 60px;
             height: 60px;
             margin-right: 15px;
         }
     }
-    
     &__name {
         font-size: 20px;
         line-height: 25px;
         font-weight: 700;
     }
-    
     &__description {
         display: none;
-        @include for-sm-up{
+        @include for-sm-up {
             display: inline-block;
             font-size: 18px;
             line-height: 25px;
@@ -97,7 +95,6 @@
             opacity: 0.6;
         }
     }
-    
     &__text {
         display: flex;
         flex-direction: column;
@@ -107,7 +104,7 @@
 
 .top-section {
     background-color: $background-color-secondary;
-    @include for-sm-up{
+    @include for-sm-up {
         padding-top: 39px;
     }
 }
