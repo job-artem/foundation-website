@@ -1,17 +1,18 @@
 .header {
-    @include for-sm-up {
-        width: 1140px;
-        height: 62px;
-        margin: auto;
-        display: flex;
-        background-color: $background-color-secondary;
-    }
     height: 64px;
     width: 100%;
     background-color: white;
     padding-left: 15px;
     display: flex;
     align-items: center;
+    @include for-sm-up {
+        width: 1140px;
+        height: 62px;
+        margin: auto;
+        display: flex;
+        padding: 0;
+        background-color: $background-color-secondary;
+    }
     &__menu-button {
         @include for-sm-up {
             display: none;
@@ -31,45 +32,9 @@
     }
 }
 
-.navigation {
-    display: none;
-    @include for-sm-up {
-        display: block;
-        margin-left: auto;
-        margin-top: 7px;
-        margin-right: 75px;
-    }
-    &__arrow {
-        background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
-        display: inline-block;
-        width: 8px;
-        height: 5px;
-        margin-left: 11px;
-    }
-    &__item {
-        color: $text-color-black;
-        text-decoration: none;
-        line-height: 25px;
-        font-size: 18px;
-        margin-right: 50px;
-        &_selected {
-            font-weight: 700;
-        }
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-}
-
-.media__button {
-    display: none;
-    @include for-sm-up {
-        display: block;
-    }
-}
-
 .logo {
     display: flex;
+    
     &__image {
         width: 48px;
         height: 48px;
@@ -89,7 +54,7 @@
         display: none;
         @include for-sm-up {
             display: inline-block;
-            font-size: 18px;
+            font-size: 20px;
             line-height: 25px;
             color: $text-color-black;
             opacity: 0.6;
@@ -102,9 +67,81 @@
     }
 }
 
+.navigation {
+    display: none;
+    @include for-sm-up {
+        display: block;
+        margin-left: 335px;
+        
+        width: 273px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__arrow {
+        background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
+        display: none;
+        width: 8px;
+        height: 5px;
+        margin-left: 11px;
+    }
+    &__item {
+        color: $text-color-black;
+        text-decoration: none;
+        line-height: 25px;
+        font-size: 18px;
+        &_selected {
+            font-weight: 700;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.media__button {
+    display: none;
+    @include for-sm-up {
+        display: block;
+        margin-right: 0;
+    }
+}
+
+
+
 .top-section {
     background-color: $background-color-secondary;
     @include for-sm-up {
         padding-top: 39px;
+    }
+}
+
+
+.header__button {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
+    background-blend-mode: overlay, normal;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    color: white;
+    width: 100%;
+    margin-bottom: 15px;
+    height: 48px;
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 13px;
+    display: block;
+    @include for-sm-up {
+        margin: 0;
+        margin-left: auto;
+        width: 160px;
+        height: 48px;
+        display: inline-block;
+    }
+}
+
+.header .header__button {
+    display: none;
+    @include for-sm-up {
+        display: block;
     }
 }
