@@ -1,5 +1,6 @@
 @import './breakpoints.scss';
 .about {
+    background: #F4F5F7;
     padding: 46px 15px;
     @include for-sm-up {
         display: flex;
@@ -22,6 +23,7 @@
         font-weight: bold;
         font-size: 22px;
         line-height: 32px;
+        margin: 0;
     }
     &__text {
         font-size: 22px;
