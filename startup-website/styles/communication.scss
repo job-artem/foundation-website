@@ -1,41 +1,41 @@
-.communication{
+.communication {
     padding: 50px 15px;
-    @include for-sm-up{
+    @include for-sm-up {
         padding: 110px 130px 110px 126px;
-        
     }
-    &__upper{
-        @include for-sm-up{
+    &__upper {
+        @include for-sm-up {
             margin-bottom: 68px;
-            display: flex;
-        }  
-    }
-    &__lower{
-        @include for-sm-up{
             display: flex;
         }
     }
-    &__text-content{
+    &__lower {
+        @include for-sm-up {
+            display: flex;
+        }
+    }
+    &__text-content {
         width: 462px;
         margin-right: 193px;
     }
-
-    &__subtitle{
-        @include for-sm-up{
+    &__subtitle {
+        @include for-sm-up {
             margin: 0;
             margin-top: 13px;
         }
+        margin: 0;
         font-weight: bold;
         font-size: 22px;
         line-height: 34px;
         /* identical to box height, or 155% */
         color: $subtitle-tertiary-color;
     }
-    &__title{
-        @include for-sm-up{
+    &__title {
+        @include for-sm-up {
             margin: 0;
             margin-top: 24px;
         }
+        margin: 0;
         font-weight: bold;
         font-size: 40px;
         line-height: 40px;
@@ -44,17 +44,19 @@
         color: $text-color-black;
         margin-top: 17px;
     }
-    &__text{
-        @include for-sm-up{
+    &__text {
+        @include for-sm-up {
             margin: 0;
             margin-top: 30px;
         }
+        margin: 0;
+        margin-top: 18px;
         font-size: 24px;
         line-height: 34px;
         color: $text-color-black;
     }
-    &__button{
-        @include for-sm-up{
+    &__button {
+        @include for-sm-up {
             margin: 0;
             margin-top: 39px;
         }
@@ -64,41 +66,43 @@
     &__small-image {
         margin-top: 40px;
         margin-bottom: 74px;
-        @include for-sm-up{
+        @include for-sm-up {
             display: none;
         }
-        img{
+        img {
             max-width: 100%;
         }
-        &-caption{
+        &-caption {
             margin-top: 17px;
             font-size: 14px;
             line-height: 22px;
             color: $text-secondary-color;
             text-align: center;
-        }    
+        }
     }
-    &__big-image{
+    &__big-image {
         display: none;
-        @include for-sm-up{
+        @include for-sm-up {
             display: block;
             margin: 0;
         }
     }
-    &__text_block{
+    &__text_block {
         margin-bottom: 32px;
         font-size: 18px;
         line-height: 26px;
-        p{
+        p {
             margin: 0;
         }
-        a{
+        a {
             font-weight: bold;
         }
-        @include for-sm-up{
+        @include for-sm-up {
             width: 33%;
             margin-right: 30px;
         }
     }
-    
+    &__text_block:last-child {
+        margin-bottom: 0px;
+    }
 }

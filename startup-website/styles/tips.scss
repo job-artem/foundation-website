@@ -14,7 +14,7 @@
     &__title {
         margin: 0;
         margin-top: 17px;
-        margin-bottom: 13px;
+        margin-bottom: 15px;
         font-size: 40px;
         font-weight: 700;
         line-height: 40px;
@@ -26,6 +26,8 @@
         line-height: 34px;
         /* or 142% */
         color: $text-color-black;
+        margin: 0;
+        margin-bottom: 30px;
     }
     &__image {
         margin: 0;
