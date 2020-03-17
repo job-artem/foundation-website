@@ -6,10 +6,6 @@
         display: flex;
         flex: 1;
     }
-    &  img {
-        filter: brightness(0);
-        max-width: 80%;
-    }
     &__item {
         height: 94px;
         width: 107px;
@@ -23,8 +19,7 @@
     &__item:last-child {
         border-right: none;
     }
-
-    @include for-sm-up{
+    @include for-sm-up {
         padding-left: 130px;
         padding-right: 130px;
         padding-top: 30px;
@@ -32,16 +27,13 @@
         flex-direction: row;
         align-items: center;
     }
-    &__item {
-        border: none;
-    }
     &__container {
         flex: 1;
         justify-content: space-around;
+        width: 100%;
     }
     & img {
         filter: brightness(0);
-        max-width: 100%;
+        max-width: 80%;
     }
 }
-
