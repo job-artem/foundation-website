@@ -932,6 +932,13 @@
     margin: 0;
   }
 }
+.communication__big-image-caption {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(43, 41, 45, 0.6);
+  text-align: center;
+}
 .communication__text_block {
   margin-bottom: 32px;
   font-size: 18px;
@@ -990,6 +997,8 @@
     letter-spacing: -0.5px;
     margin: 0;
     margin-top: 24px;
+    max-width: 555px;
+    font-weight: bold;
   }
 }
 .audience__text {
@@ -1005,6 +1014,7 @@
   .audience__text {
     margin-top: 30px;
     margin-bottom: 0;
+    max-width: 555px;
   }
 }
 .audience__button {
@@ -1082,9 +1092,9 @@
 @media screen and (min-width: 400px) {
   .feedback {
     padding: 0;
-    padding-top: 76px;
     padding-bottom: 66px;
     margin: 0;
+    margin-top: 76px;
     align-items: center;
     position: relative;
   }

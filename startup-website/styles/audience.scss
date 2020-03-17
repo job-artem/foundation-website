@@ -32,6 +32,8 @@
             letter-spacing: -0.5px;
             margin: 0;
             margin-top: 24px;
+            max-width: 555px;
+            font-weight: bold;
         }
     }
     &__text {
@@ -45,6 +47,7 @@
         @include for-sm-up {
             margin-top: 30px;
             margin-bottom: 0;
+            max-width: 555px;
         }
     }
     &__button {
