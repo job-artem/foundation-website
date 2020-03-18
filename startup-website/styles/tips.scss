@@ -20,6 +20,12 @@
         line-height: 40px;
         letter-spacing: -0.357143px;
         color: $text-color-black;
+        &_marg_corr {
+            margin-bottom: 18px;
+        }
+        &_marg-corr-2 {
+            margin-bottom: 13px;
+        }
     }
     &__description {
         font-size: 24px;
@@ -28,18 +34,28 @@
         color: $text-color-black;
         margin: 0;
         margin-bottom: 30px;
+        &-marg-corr {
+            margin-bottom: 29px;
+        }
     }
     &__image {
         margin: 0;
         margin-top: 29px;
     }
     &__image-caption {
-        margin-top: 20px;
+        margin-top: 19px;
         font-size: 14px;
         line-height: 22px;
         text-align: center;
         color: $text-secondary-color;
         margin-bottom: 40px;
+        &__marg-corr {
+            margin-top: 19px;
+        }
+        &__marg-corr2 {
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
     }
 }
 
@@ -55,4 +71,8 @@
     & figure img {
         max-width: 100%;
     }
+}
+
+.tip:first-child {
+    padding-top: 48px;
 }

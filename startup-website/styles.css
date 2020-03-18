@@ -100,6 +100,12 @@
   letter-spacing: -0.357143px;
   color: #2B292D;
 }
+.tips__title_marg_corr {
+  margin-bottom: 18px;
+}
+.tips__title_marg-corr-2 {
+  margin-bottom: 13px;
+}
 .tips__description {
   font-size: 24px;
   line-height: 34px;
@@ -108,17 +114,27 @@
   margin: 0;
   margin-bottom: 30px;
 }
+.tips__description-marg-corr {
+  margin-bottom: 29px;
+}
 .tips__image {
   margin: 0;
   margin-top: 29px;
 }
 .tips__image-caption {
-  margin-top: 20px;
+  margin-top: 19px;
   font-size: 14px;
   line-height: 22px;
   text-align: center;
   color: rgba(43, 41, 45, 0.6);
   margin-bottom: 40px;
+}
+.tips__image-caption__marg-corr {
+  margin-top: 19px;
+}
+.tips__image-caption__marg-corr2 {
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .tip {
@@ -133,6 +149,10 @@
 }
 .tip figure img {
   max-width: 100%;
+}
+
+.tip:first-child {
+  padding-top: 48px;
 }
 
 .features {
