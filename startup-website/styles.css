@@ -1407,22 +1407,22 @@
   }
 }
 
-.order-mob {
+.order {
   background: #F4F5F7;
   padding: 50px 15px;
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 400px) {
-  .order-mob {
+  .order {
     display: none;
   }
 }
-.order-mob__small-img {
+.order__small-img {
   margin: auto;
   max-width: 100%;
 }
-.order-mob__title {
+.order__title {
   margin: 0;
   padding: 0;
   margin-top: 40px;
@@ -1432,14 +1432,14 @@
   /* or 100% */
   letter-spacing: -0.357143px;
 }
-.order-mob__text {
+.order__text {
   margin: 0;
   padding: 0;
   margin-top: 18px;
   font-size: 24px;
   line-height: 34px;
 }
-.order-mob__button {
+.order__button {
   margin-top: 12px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #3040C4;
   background-blend-mode: overlay, normal;
@@ -1451,7 +1451,7 @@
   color: #fff;
   font-weight: 700;
 }
-.order-mob__input {
+.order__input {
   margin-top: 40px;
   border: 1px solid rgba(43, 41, 45, 0.2);
   border-radius: 2px;
@@ -1466,7 +1466,7 @@
   width: 100%;
   text-align: center;
 }
-.order-mob__add-text {
+.order__add-text {
   font-size: 14px;
   line-height: 22px;
   /* or 157% */
@@ -1474,22 +1474,22 @@
   margin-top: 10px;
 }
 
-.order {
+.order-desc {
   display: none;
 }
 @media screen and (min-width: 400px) {
-  .order {
+  .order-desc {
     display: flex;
   }
-  .order__img {
+  .order-desc__img {
     margin: 73px 0px 72px 224px;
   }
-  .order__text-content {
+  .order-desc__text-content {
     display: flex;
     flex-direction: column;
     margin: 106px 229px 105px 122px;
   }
-  .order__title {
+  .order-desc__title {
     font-weight: bold;
     font-size: 40px;
     line-height: 40px;
@@ -1497,25 +1497,25 @@
     letter-spacing: -0.25px;
     color: #2B292D;
   }
-  .order__text {
+  .order-desc__text {
     font-weight: normal;
     font-size: 22px;
     line-height: 32px;
     /* or 145% */
     color: #2B292D;
   }
-  .order__form {
+  .order-desc__form {
     display: flex;
     margin-top: 26px;
   }
-  .order__input {
+  .order-desc__input {
     border: 1px solid rgba(43, 41, 45, 0.2);
     border-radius: 2px;
     margin-right: 10px;
     height: 48px;
     padding: 17px 0 18px 15px;
   }
-  .order__button {
+  .order-desc__button {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #3040C4;
     background-blend-mode: overlay, normal;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
@@ -1528,7 +1528,7 @@
     font-size: 18px;
     line-height: 13px;
   }
-  .order__add-text {
+  .order-desc__add-text {
     margin-top: 10px;
     font-weight: normal;
     font-size: 14px;

@@ -1,4 +1,4 @@
-.order-mob {
+.order {
     @include for-sm-up {
         display: none;
     }
@@ -63,7 +63,7 @@
     }
 }
 
-.order {
+.order-desc {
     display: none;
     @include for-sm-up {
         display: flex;
